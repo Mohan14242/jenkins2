@@ -9,6 +9,7 @@ pipeline {
             steps {
                 // Creating a directory named "mohanchiru"
                 echo "this is the mohan"
+                mkdir "mohanchiru"
             }
         }
 
