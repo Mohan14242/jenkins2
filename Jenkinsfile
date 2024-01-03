@@ -6,7 +6,7 @@ pipeline{
         stage("build"){
             steps{
                 mkdir mohanchiru 
-                touch \mohanchiru\mohan
+                touch mohanchiru/mohan
 
             }
         }
