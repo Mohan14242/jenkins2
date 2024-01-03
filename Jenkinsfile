@@ -5,9 +5,8 @@ pipeline{
     stages{
         stage("build"){
             steps{
-                sh ' echo "building stage" 
-                    mkdir mohanchiru
-                    touch mohanchiru/mohan'
+                mkdir mohanchiru 
+                touch \mohanchiru\mohan
 
             }
         }
