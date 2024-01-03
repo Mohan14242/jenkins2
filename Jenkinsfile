@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent{
+        node{
+            label "mohan"
+        }
+    }
     stages {
         stage("build") {
             steps {
@@ -7,5 +11,6 @@ pipeline {
                 echo "this is the mohan"
             }
         }
+
     }
 }
