@@ -1,11 +1,11 @@
    pipeline {
        agent {
-           label 'mohan'
+           customWorkspace '/home/centos/'
        }
        stages {
            stage('Build') {
                steps {
-                   sh 'echo "Building on Linux"'
+                   sh 'echo "Building in custom workspace"'
                }
            }
        }
