@@ -11,7 +11,7 @@
            }
 
            stage("timeut stage"){
-            timeout(time=5,units="seconds"){
+            timeout(time:5,unit:"seconds"){
                 steps{
                     echo "this stage should be run within 5 seconds"
                 
