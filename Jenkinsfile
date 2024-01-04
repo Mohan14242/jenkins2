@@ -1,9 +1,12 @@
    pipeline {
        agent any
+       environment{
+        name='mohan'
+       }
        stages {
            stage('Build') {
                steps {
-                   mkdir "chir"
+                   echo "my name is ${name}"
                }
            }
        }
