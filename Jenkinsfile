@@ -1,9 +1,9 @@
    pipeline {
-       agent "mohan"
+       agent any
        stages {
            stage('Build') {
                steps {
-                   sh 'echo "Building in custom workspace"'
+                   mkdir "chir"
                }
            }
        }
