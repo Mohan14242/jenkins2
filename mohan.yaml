@@ -1,0 +1,9 @@
+- name: first ansible play book 
+  hosts: localhost 
+  vars: 
+    num1: 10
+    num2 : 20 
+  tasks:
+  - name: displaying the the task 
+    ansible.builtin.debug:
+      msg: "this is the first number is {{num1}} and second number is {{num2}}"
