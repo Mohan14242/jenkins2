@@ -1,5 +1,6 @@
 #!/bin/bash
 
-echo "enter yoour name "
-read user_name 
-echo "hello $user_name"
+num1=10 
+num2=20 
+result=$(num1+num2)
+echo "total result is $result"
