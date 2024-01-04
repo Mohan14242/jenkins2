@@ -9,6 +9,15 @@
                    echo "my name is ${name}"
                }
            }
+
+           stage("timeut stage"){
+            timeut(time=5,units="seconds"){
+                steps{
+                    echo "this stage should be run within 5 seconds"
+                
+                }
+            }
+           }
        }
 
        post{
