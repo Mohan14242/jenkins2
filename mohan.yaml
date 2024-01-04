@@ -9,4 +9,4 @@
   tasks:
   - name: displaying the the task 
     ansible.builtin.debug:
-      msg: "this is the first number is {{num1}} and second number is {{num2}}"
+      msg: "this is the first number is {{my_list}}"
