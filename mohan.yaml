@@ -1,12 +1,12 @@
 - name: first ansible play book 
   hosts: localhost 
   vars: 
-    my_list:
-      - mohan
-      - chiru
-      - vijay
-      - praveen
+    my_dict:
+      name: mohan
+      age: 25 
+      salary: False
+    
   tasks:
   - name: displaying the the task 
     ansible.builtin.debug:
-      msg: "this is the first number is {{my_list}}"
+      msg: "this is the first number is {{my_dict}}"
