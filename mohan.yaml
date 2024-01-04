@@ -11,4 +11,4 @@
   tasks:
   - name: displaying the the task 
     ansible.builtin.debug:
-      msg: "this is the first number is {{name}} amd the age is {{age}} and salary is {{salary}}"
+      msg: "this is the first number is {{name}} amd the age is {{age}} and salary is {{salary}} and {{mohan}}"
