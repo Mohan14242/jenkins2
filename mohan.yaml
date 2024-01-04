@@ -1,12 +1,15 @@
 - name: first ansible play book 
   hosts: localhost 
-  vars_files:
-    - m.yaml
-  vars_prompt:
-    - name: mohan
-      prompt: "enter your name"
-      private: True 
+  vars:
+    num:
+     - 1
+     - 2
+     - 3
+     - 4
+     - 5
   tasks:
-  - name: displaying the the task 
+  - name: selecting the even numbers 
     ansible.builtin.debug:
-      msg: "this is the first number is {{name}} amd the age is {{age}} and salary is {{salary}} and {{mohan}}"
+      msg: "even numbers are {{item}}"
+    loop: "{{num | select('even')}}"
+  
