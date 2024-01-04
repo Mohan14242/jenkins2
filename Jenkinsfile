@@ -9,4 +9,13 @@
                }
            }
        }
+
+       post{
+        always{
+            echo "this will aloways run regardles of the pipeline result"
+        }
+        changed{
+            echo "this runs only when the code changes compared to previous one"
+        }
+       }
    }
