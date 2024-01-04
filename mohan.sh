@@ -1,8 +1,5 @@
 #!/bin/bash
-echo "this is the mohan who are you"
 
-name=mohan
-age=25
-
-echo "this is $name"
-echo "my age is $age"
+echo "enter yoour name "
+read user_name 
+echo "hello $user_name"
