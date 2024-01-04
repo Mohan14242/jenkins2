@@ -1,6 +1,6 @@
 - name: first ansible play book 
   hosts: localhost 
-  vars_files::
+  vars_files:
     - m.yaml
   tasks:
   - name: displaying the the task 
