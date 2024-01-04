@@ -1,8 +1,11 @@
 - name: first ansible play book 
   hosts: localhost 
   vars: 
-    num1: 10
-    num2 : 20 
+    my_list:
+      - mohan
+      - chiru
+      - vijay
+      - praveen
   tasks:
   - name: displaying the the task 
     ansible.builtin.debug:
