@@ -1,7 +1,5 @@
    pipeline {
-       agent {
-           customWorkspace '/home/centos/'
-       }
+       agent any
        stages {
            stage('Build') {
                steps {
