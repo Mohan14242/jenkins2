@@ -15,5 +15,8 @@
         changed{
             echo "this runs only when the code changes compared to previous one"
         }
+        failure{
+            echo "this runs only when the pipeline fails"
+        }
        }
    }
