@@ -3,10 +3,10 @@
   vars_files:
     - m.yaml
   vars_prompt:
-    - name: mohan
-      prompt: "enter your name"
-      private: True 
-      type: string
+  - name: mohan
+    prompt: "enter your name"
+    private: True 
+    type: string
 
   tasks:
   - name: displaying the the task 
