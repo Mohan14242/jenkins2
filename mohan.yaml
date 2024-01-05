@@ -6,11 +6,17 @@
       age : 30 
       salary: 4000 
       education: btech
+    address:
+      village: gangavaram 
+      state: ap 
+      dist: chittoor 
   tasks: 
   - name: decsibing the all databases
     ansible.builtin.debug:
-      msg: "my details are {{item.key}} and {{item.value}}"
-    with_dict: "{{details}}"
-    when: "item.value > 10000"
+      msg: "my details are {{item.0.key}}"
+    with_dict: 
+     - "{{details}}"
+     - "{{address}}"
+    
 
   
