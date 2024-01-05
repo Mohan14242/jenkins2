@@ -6,7 +6,7 @@
   tasks: 
   - name: decsibing the all databases
     ansible.builtin.debug: 
-      msg: "the list is {{}}"
+      msg: "the list is {{item}}"
     with_items:
       - "{{names}}"
    
