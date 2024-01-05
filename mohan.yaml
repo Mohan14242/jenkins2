@@ -1,16 +1,13 @@
 - name: first ansible play book 
   hosts: mongodb
   vars:
-    packages:
-      - nginx 
-      - git 
-      - ansible 
-      - mysql 
-    state: 
-      - present 
-      - present 
-      - present
-      - present 
+    name: mohan 
+    age: 25 
+  vars_prompt:
+    - name: salary 
+      prompt: "please enter yur salary for future use"
+      private: True
+
   tasks: 
   - name: decsibing the all databases
     become: yes
