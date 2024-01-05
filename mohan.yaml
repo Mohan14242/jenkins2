@@ -8,7 +8,7 @@
     ansible.builtin.debug: 
       msg: "the list is {{item}}"
     with_items:
-      - "{{names | dic2items}}"
+      - "{{names | dict2items }}"
    
      
     
