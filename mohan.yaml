@@ -11,6 +11,6 @@
     ansible.builtin.debug:
       msg: "my details are {{item.key}} and {{item.value}}"
     with_dict: "{{details}}"
-    when: "item.salary > 10000"
+    when: "item.value > 10000"
 
   
