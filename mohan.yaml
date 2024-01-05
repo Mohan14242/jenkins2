@@ -6,7 +6,7 @@
   vars_prompt:
     - name: salary 
       prompt: "please enter yur salary for future use"
-      private: True
+      private: false
 
   tasks: 
   - name: decsibing the all databases
