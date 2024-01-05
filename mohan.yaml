@@ -13,6 +13,7 @@
       - present 
   tasks: 
   - name: decsibing the all databases
+    become: yes
     ansible.builtin.yum:
       name: "{{item.0}}"
       state: "{{item.1}}"
