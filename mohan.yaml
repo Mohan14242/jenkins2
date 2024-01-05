@@ -1,7 +1,7 @@
 - name: first ansible play book 
   hosts: mongodb
   vars:
-    names: [name: mohan, age : 25 ,salary : 10]
+    names: {name: mohan, age : 25 ,salary : 10}
 
   tasks: 
   - name: decsibing the all databases
