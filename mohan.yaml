@@ -1,22 +1,15 @@
 - name: first ansible play book 
   hosts: mongodb
   vars:
-    name: mohan 
-    age: 25 
-  vars_prompt:
-    - name: salary 
-      prompt: "please enter yur salary for future use"
-      private: false
+    names: [1,2,3,4,5,7]
 
   tasks: 
   - name: decsibing the all databases
-    become: yes
-    ansible.builtin.yum:
-      name: "{{item.0}}"
-      state: "{{item.1}}"
-    with_together: 
-      - "{{packages}}"
-      - "{{state}}"
+    ansible.builtin.debug: 
+      msg: "the list is {{}}"
+    with_items:
+      - "{{names}}"
+   
      
     
 
