@@ -1,14 +1,14 @@
 - name: first ansible play book 
   hosts: mongodb
   vars:
-    names: [1,2,3,4,5,7]
+    names: [name: mohan, age : 25 ,salary : 10]
 
   tasks: 
   - name: decsibing the all databases
     ansible.builtin.debug: 
       msg: "the list is {{item}}"
     with_items:
-      - "{{names}}"
+      - "{{names | dic2items}}"
    
      
     
