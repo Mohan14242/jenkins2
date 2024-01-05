@@ -13,7 +13,7 @@
   tasks: 
   - name: decsibing the all databases
     ansible.builtin.debug:
-      msg: "my details are {{item.0.key}}"
+      msg: "my details are {{item.key}} and {{item.value}}"
     with_dict: 
      - "{{details}}"
      - "{{address}}"
